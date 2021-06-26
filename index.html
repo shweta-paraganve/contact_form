@@ -1,6 +1,8 @@
+
 <html>
 <style>
-.about-us{
+
+.contact-us{
   padding:20px;
   font-family:"Times New Roman";
 }
@@ -23,10 +25,10 @@
   flex: 50%;
 }
 
-.flex-item-right img:hover{
+/*.flex-item-left img:hover{
   opacity:0.8;
   margin-top:10px;
-}
+}*/
 
 .container {
   
@@ -135,7 +137,7 @@ element.style {
   	padding: 20px;
  	margin-top: 5px;
 	 height:15px;
-    background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+      background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
   	border: 0;
   	cursor: pointer;
   	font-weight: bold;
@@ -151,8 +153,13 @@ element.style {
     font-size: 20px;
     text-align:justify;
   }
+.flex-item-right{
+margin-left: 200px;
 
-
+}
+.conatiner{
+width: 800px;
+}
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
@@ -162,114 +169,101 @@ element.style {
     width:100%;
     font-size: 15px;
     text-align:justify;
-  }
-.conatiner{
-margin-left:50px;
-margin-right: 50px;
+
 
 }
+  }
 
+
+}
 </style>
 <body>
 <section class="CONTACT US" id="gd-about-us">
-    <h1 style="text-align:center; padding:25px;">CONTACT US</h1>
+    <h1 style="text-align:center; padding:20px; font-size:35px;">CONTACT US</h1>
     <div class="flex-container">
 
       <div class="flex-item-left">
-<img src="svg1.jpg" alt="bag-image" width="100%">
-
-       
-
+<img src="svg2.jpg" alt="bag-image" width="100%">
       </div>
 
       <div class="flex-item-right">
         <!--form-->
 <div class="container">
-      
-
 <form method="post" action="//submit.form" onSubmit="return validateForm();">
-
-
-<div style="display: flex; padding-bottom: 8px; max-width : 350px;">
-<div style=" margin-left: 1%; margin-right: 1%; max-width:450px;"></h1>Name<br/>
-<input type="text" id="data_5" name="data_5"  style="max-width : 450px;"  class="form-control" ; required/>
+<!--<div style="max-width: 400px;">-->
+<!--</div>-->
+<div style="padding-bottom: 8px;margin-left: 0%; margin-right: 1%; max-width: 400px;">Name<br/>
+<input type="text" id="data_11" name="data_11" style="max-width : 450px;" class="form-control"/>
 </div>
-
+<div style="padding-bottom: 18px;margin-left: 0%; margin-right: 1%; max-width: 400px;">Email<br/>
+<input type="text" id="data_3" name="data_3" style="max-width : 450px;" class="form-control"/>
 </div>
-<div style="padding-bottom: 8px;margin-left: 0%; margin-right: 1%; max-width: 400px;">Email<br/>
-<input type="text" id="data_7" name="data_7" style="max-width : 450px;" class="form-control"/>
+<div style="padding-bottom: 18px;margin-left: 0%; margin-right: 1%; max-width: 400px;">Location<br/>
+<input type="text" id="data_4" name="data_4" style="max-width : 450px;" class="form-control"/>
 </div>
-<div style="padding-bottom: 8px;margin-left: 0%; margin-right: 1%; max-width: 400px;">Location<br/>
-<input type="text" id="data_21" name="data_21" style="max-width : 450px;" class="form-control"/>
+<div style="padding-bottom: 18px;margin-left: 0%; margin-right: 1%; max-width: 400px;">Mobile no.<br/>
+<input type="number" id="data_5" name="data_5" style="max-width : 400px;" class="form-control"/>
 </div>
-<div style="padding-bottom: 8px;margin-left: 0%; margin-right: 1%; max-width: 400px;">Mobile Number<br/>
+<div style="padding-bottom: 18px;margin-left: 0%; margin-right: 1%; max-width: 400px;">Do you have your own shop?<br/>
+<span><input type="radio" style="vertical-align: middle; margin: 0px;" id="data_6_0" name="data_6" value="yes"/> yes</span><br/>
+<span><input type="radio" style="vertical-align: middle; margin: 0px;" id="data_6_1" name="data_6" value="no"/> no</span><br/>
+</div>
+<div style="padding-bottom: 18px;margin-left: 0%; margin-right: 1%; max-width: 400px;">What type of bag would you like to order?<br/>
+<select id="data_7" name="data_7" style="max-width : 400px;" class="form-control">
+<option>      </option>
+<option>paper pouch</option>
+<option>handled paper bag</option>
+<option>thin handled bag</option>
+<option>pizza bag</option>
+<option>other</option>
+</select>
+</div>
+<div style="padding-bottom: 18px;margin-left: 0%; margin-right: 1%; max-width: 400px;">If other then please mention here<br/>
 <input type="text" id="data_8" name="data_8" style="max-width : 450px;" class="form-control"/>
 </div>
-<div style="padding-bottom: 8px;margin-left: 0%; margin-right: 1%; max-width: 400px; ">Do  you have own shop?<br/>
-<span><input type="radio" style="vertical-align: middle; margin: 0px;" id="data_22_0" name="data_22"  value="Option1"/> Yes</span><br/>
-<span><input type="radio" style="vertical-align: middle; margin: 0px;" id="data_22_1" name="data_22" value="Option2"/> No</span><br/>
+<div style="padding-bottom: 18px;margin-left: 0%; margin-right: 1%; max-width: 400px;">Quantity (minimum 1000*)<br/>
+<input type="text" id="data_9" name="data_9" style="max-width : 450px;" class="form-control"/>
 </div>
-
-<div style="padding-bottom: 8px;margin-left: 0%;width:100%; margin-right: 1%;  max-width: 450px; min-height: 1rem;" >What type of bag would you like to order?<br/>
-<select id="data_16" name="data_16" style="width:100%; max-width : 400px;"  class="form-control" >
-<option>     </option>
-<option>Paper Pouch</option>
-<option>Handled Paper Bag</option>
-<option>Thin Handled Bag</option>
-<option>Pizza Bag</option>
-<option>Other</option>
-</select>
+<div style="padding-bottom: 18px;">Message<br/>
+<textarea id="data_10" false name="data_10" style="max-width : 400px;" rows="5"
+cols="40" class="form-control"></textarea>
 </div>
-<div style="padding-bottom: 8px;margin-left: 0%; margin-right: 1%; max-width: 400px;">If other then please mention here<br/>
-<input type="text" id="data_24" name="data_24" style="max-width : 450px;" class="form-control"/>
-</div>
-<div style="padding-bottom: 8px;margin-left: 0%; margin-right: 1%; max-width: 400px;">Quantity    (minimum 1000*)<br/>
-<input type="text" id="data_24" name="data_24" style="max-width : 450px;" class="form-control"/>
-
-</select>
-</div>
-<div >
-
-<div style="padding-bottom: 8px;margin-left: 0%; margin-right: 1%; max-width: 400px;">Message<br/>
-<textarea name="Comments" rows="5" cols="45" style="width:100%;max-width:450px;"></textarea>
-
-
-
-</div>
-<div class="gradient" style="padding-bottom: 20px; width:100%; max-width:400px;" ><input name="skip_Submit" value="Submit" type="submit"/></div>
+<div  class="gradient" style="padding-bottom: 18px; width:100%; max-width:400px;">
+<input name="skip_Submit" value="Submit" type="submit"/></div>
 <div>
 
-<a href="https://www.100forms.com" id="lnk100" title="form to email" style="font-size:0px">100forms</a>
-<script src="https://www.100forms.com/js/FORMKEY:XKENU9JEUHJC" type="text/javascript"></script>
+<a href="https://www.100forms.com" id="lnk100" title="form to email" style="font-size:0px">100form</a>
+<script src="https://www.100forms.com/js/FORMKEY:D6EGMN7Y53Y9" type="text/javascript"></script>
 </div>
 </div>
 </form>
-
-</span>
 </div>
 </div>
 </div>
 </div>
-    </div>
+</div>
   </section>
-</body>
-
-<script>
-feather.replace();
-let closeForm = function() {
-let form = document.getElementById('contactForm');
-let open = true;
-
-form.style.display = "block";
-
-if(open == true){
-form.style.display = "none";
-open = false;
-} 
+<script type="text/javascript">
+function validateForm() {
+if (isEmpty(document.getElementById('data_11').value.trim())) {
+alert('Name is required!');
+return false;
 }
-
-
-      
-
+if (!validateEmail(document.getElementById('data_3').value.trim())) {
+alert('Email must be a valid email address!');
+return false;
+}
+if (isEmpty(document.getElementById('data_5').value.trim())) {
+alert('Mobile no. is required!');
+return false;
+}
+return true;
+}
+function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+function validateEmail(email) {
+var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+return isEmpty(email) || re.test(email);
+}
 </script>
+</body>
 </html>
