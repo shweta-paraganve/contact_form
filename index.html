@@ -27,12 +27,13 @@
                           }
 
         .container {
-                   margin:2% 35%;
-                   margin-left:65px;  
+		margin:auto;/*changed*/
+                  /* margin:2% 35%;
+                   margin-left:65px;  */
 		   width: auto ;
                  }
          form{
-              width:400px;
+             width: auto;             /* width:400px;*/
               padding-left:5px;
               margin-top: 4px;
               margin-right:10px;
@@ -47,7 +48,7 @@
               }
 
 	 .form-control{
-               width:600px;
+               width: auto;          /*width:600px;*/
                background:transparent;
                border:none;
                outline:none;
@@ -68,7 +69,7 @@
 /* Add styles to 'input' and 'textarea' selectors */
 
            input[type=text],input[type=email], textarea {
-           width: 100%;
+           width: auto;           /*width: 100%;*/
            padding: 10px;
            background-color: #f2f6f8;
            box-sizing: border-box;
@@ -139,7 +140,7 @@
                                 }
                         .flex-item-right{
                                margin-left: 200px;
-				width:100%;/*changed*/
+				width:auto;
                                  }
                         .conatiner{
                                 width:auto;
@@ -177,7 +178,7 @@
       <div class="flex-item-right">
         
 	      <!--form-->
-     <div class="container" >
+     <div class="container">
 	  <form method="post" action="//submit.form" onSubmit="return validateForm();">
 		
 		  <!--name-->  
