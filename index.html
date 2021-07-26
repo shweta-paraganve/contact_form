@@ -137,6 +137,7 @@
                                }
                  /* Responsive layout - makes a one column-layout instead of two-column layout */
                  @media screen and (max-width: 1200px) {
+			 @-ms-viewport { width: 640px; }
                         .flex-container {
                                flex-direction: column;
                                width:100%;
@@ -154,6 +155,7 @@
 
                 /* Responsive layout - makes a one column-layout instead of two-column layout */
                 @media screen and (max-width: 440px) {
+			@-ms-viewport { width: 320px; }
                        .flex-container {
                              flex-direction: column;
                              width:100%;
@@ -164,6 +166,7 @@
                               /* changed next two lines ----------margin-left: 200px;*/
 			      width: 100%;
 			       margin:2px;
+			       
 			     /* width:auto;*/
                               }
                        .conatiner{
