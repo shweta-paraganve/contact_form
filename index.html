@@ -1,289 +1,256 @@
-<!--contact-form-->
 <html>
-	<!--css part-->
-      <style>
-      .contact-us{
-                 padding:20px;
-                 font-family:"Times New Roman";
-                 }
+<section id="ki-message">
+  <div class="item" data-aos="zoom-in"> 
+<h2 style="margin-top:5%;margin-bottom:0%;">Shoot out me!</h2>
+<style>
 
-     .flex-container {
-                      width:100%;
-                      position:relative;
-                      display: flex;
-                      flex-direction: row;
-                      font-size: 20px;
-                      text-align:justify;
-                      }
+#ki-message{overflow:hidden;}
 
-      .flex-item-left {
-                      padding:15px;
-                      flex: 50%;
-                        }
+#ki-message h2{
+  font-size:40px;
+  text-align:center;
+  color:cyan;
+}
+/* Float four columns side by side */
+.contact-me-column{
+  float: left;
+  width: 42%;
+  padding:40px;
+}
 
-       .flex-item-right {
-                         flex: 50%;
-	                 
-                          }
+/* Remove extra left and right margins, due to padding */
+.contact-me-row {  margin:1% 8%; background-color:transparent; }
 
-        .container {
-	
-                   margin:2% 35%;
-                   margin-left:65px;  
-		   width: auto ;
-                 }
-         form{
-              width:400px;
-              padding-left:5px;
-              margin-top: 4px;
-              margin-right:10px;
-              border: 1px solid transparent;
-              padding-top:20px;
-              align:center;
-              border-radius:25px;
-              border-width:5px;
-              border-style:solid;
-              background-color: #ffffff;
-              background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
-              }
+/* Clear floats after the columns */
+.contact-me-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive columns */
+@media screen and (max-width: 700px) {
+  .contact-me-column {
+    width: auto;
+    display: block;
+    margin:0%;
+  }
+   .contact-me-row {  margin:0%;}
 
-	 .form-control{
-                width:600px;
-               background:transparent;
-               border:none;
-               outline:none;
-               border-bottom:1px solid grey;
-               color:#000000;
-               font-size: 18px;
-               margin-bottom:8px;
-	       border: 1px solid transparent;
-	       background-color: #f2f6f8;
-	       border-radius: 2rem;
-               border: none;
-               box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
-               }
-         input{
-               height:45px;
+}
 
-               }
-	  
+@media screen and (min-width: 760px) {
+  .contact-me-column {
+    width: 35%;
+    display: block;
+    margin:2%;
+  }
+   .contact-me-row {  margin:0%;}
+/*******************************************************/
+
+
+
+#ki-message p{
+	font-size:25px;
+	text-align:center;
+	color:white; 
+	padding-top:20px;
+}
+
+/* Add styles to 'container' class */
+
+.ct-me {
+	padding: 10px;
+  	width:auto;
+  	background-color: #E3F2FD;
+  	box-shadow: 5px 5px 8px cyan;
+  	margin:4px auto;
+	border-radius: 10px;
+	text-align:left;
+}
+
+.ct-me h5 {
+  	text-align: center;
+  	color: #5b6574;
+  	font-size: 30px;
+  	padding: 0px 0 0px 0;
+}
+
+
+/* Add styles to 'label' selector */
+
+label {
+	font-size: 0.85em;
+	margin-left: 12px;
+}
+
 /* Add styles to 'input' and 'textarea' selectors */
 
-           input[type=text],input[type=email], textarea {
-           width: 100%;  
-           padding: 10px;
-           background-color: #f2f6f8;
-           box-sizing: border-box;
-           margin-right:0px;
-           margin-top: 6px;
-           margin-bottom: 10px;
-           resize: vertical;
-	   border: none;
-           box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
-           }
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
 
-          input[type=submit] {
-	
-         	background: #64B5F6;
-	        margin: 0 auto;
-	        outline: 0;
-	        color: white;
-	        border: 0;
-	        padding: 12px 22px;
-	        border-radius: 4px;
-	        transition: all ease-in-out 0.1s;
-        	position: relative;
-	        display: inline-block;
-	        text-align: center;
-                 }
+/* Add styles to show 'focus' of selector */
 
-        /* Style 'hover' property */
-                input[type=submit]:hover {
-	        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-                background-color: #36096d;
-                background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
-                 }
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+	border: 1px solid green;
+}
 
-        /* Align items to center of the 'div' with the class 'center' */
-               .center {
-	                text-align: center;
-                   }
-               element.style {
-                              background-color: #e3f2fd;
-                              color: #e3f2fd;
-                              z-index: 2147483647;
-                              }
-                 * {
-                     font-family: 'Roboto', sans-serif;
-                     font-weight: 400;
-                     font-size:large;
-                    }
+/* Add styles to the submit button 
+input[type=submit] {
+	background: #64B5F6;
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 12px 24px;
+	border-radius: 4px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+/* Add styles for 'focus' property 
+input[type=submit]:focus {
+	background: #A5D6A7;
+	color: whitesmoke;
+}
+/* Style 'hover' property */
 
-                  .container form input[type="submit"] {
-  	                        width: 100%;
-                        	padding: 20px;
- 	                        margin-top: 5px;
-	                        height:15px;
-                                background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
-  	                        border: 0;
-  	                        cursor: pointer;
-                         	font-weight: bold;
-	                        font-size:large;
-                            	color: #ffffff;
-  	                        transition: 0.2s;
-                               }
-                 /* Responsive layout - makes a one column-layout instead of two-column layout */
-                 @media screen and (max-width: 1200px) {
-                        .flex-container {
-                               flex-direction: column;
-                               width:100%;
-                               font-size: 20px;
-                               text-align:justify;
-                                }
-                        .flex-item-right{
-                               margin-left: 200px;
-				width:auto;
-                                 }
-                        .conatiner{
-                                width:auto;
-                                }
-                             }
+input[type=submit]:hover {
+	background: #2196F3;
+}
 
-                /* Responsive layout - makes a one column-layout instead of two-column layout */
-                @media screen and (max-width: 440px) {
-                       .flex-container {
-                             flex-direction: column;
-                             width:100%;
-                             font-size: 15px;
-                             text-align:justify;
-                            }
-                       .flex-item-right{
-                              /* changed next two lines ----------margin-left: 200px;*/
-			      
-			      width:auto;
-                              }
-                       .conatiner{
-                                  width: auto;
-                                 }
-			
-		
-                              }
-                         }
-	  
+/* Align items to center of the 'div' with the class 'center' */
+.ct-me-center {
+	text-align: center;
+}*/
+
+element.style {
+    background-color: #e3f2fd;
+    color: #e3f2fd;
+    z-index: 2147483647;
+}
+
+.ct-me form input[type="submit"] {
+  	width: 100px;
+        border-radius:40px;
+  	padding: 15px;
+ 	margin-top: 20px;
+  	background-color: #3274d6;
+  	border: 0;
+  	cursor: pointer;
+  	font-weight: bold;
+  	color: #ffffff;
+  	transition: background-color 0.2s;
+}
+.ct-me form input[type="submit"]:hover{
+  background-color:green;
+}
 </style>
-	<!--contact form start-->
 <body>
-    <section class="CONTACT US" id="gd-contact-us">
-      <h1 style="text-align:center; padding:20px; font-size:35px;">CONTACT US</h1>
-         <div class="flex-container">
+<div class="contact-me-row">
+  <div class="contact-me-column">
+  <img src="svg2.jpg" alt="contact_form" width="100%">
+  </div>
 
-      <div class="flex-item-left">
-   <img src="svg2.jpg" alt="bag-image" width= "100%">
-   </div>
-      <div class="flex-item-right">
-        
-	      <!--form-->
-     <div class="container">
-	  <form method="post" action="//submit.form" onSubmit="return validateForm();">
+  <div class="contact-me-column">
+<div class="ct-me">
+	<h5>Drop a message for me !</h5>
+
+<form method="post" action="//submit.form" onSubmit="return validateForm();">
+
+
+<label for="first_name">Name</label>
+<input type="text" id="data_11" name="data_11"  class="form-control"/>
+<br>
+
+<label for="email">Email</label>
+<input type="text" id="data_3" name="data_3" class="form-control"/>
+<br>
+
+<label for="location">Location</label>
+<input type="text" id="data_4" name="data_4" class="form-control"/>
+<br>
+
+<label for="mobile">Mobile no.</label><br>
+<input type="number" id="data_5" name="data_5" class="form-control"/>
+<br><br>
+
+<label for="shop">Do you have your own shop?</label><br>
+<input type="radio" id="data_6_0" name="data_6" value="yes"/> yes<br>
+
+<span><input type="radio" id="data_6_1" name="data_6" value="no"/> no</span><br>
+<br>
+
+<label for="order">What type of bag would you like to order?</label><br>
+<select id="data_7" name="data_7"  class="form-control"><option> </option>
+<option>paper pouch</option>
+<option>handled paper bag</option>
+<option>thin handled bag</option>
+<option>pizza bag</option>
+<option>other</option>
+</select>
+<br>
+<br>
+
+<label for="other">If other then please mention here</label>
+<input type="text" id="data_8" name="data_8" class="form-control"/>
+<br>
+
+<label for="other">Quantity (minimum 1000*)</label>
+<input type="text" id="data_9" name="data_9"  class="form-control"/>
+<br>
+
+<label for="message">Message</label>
+<textarea id="data_10" false name="data_10"  rows="6" class="form-control"></textarea>
+
+
+<div class="ct-me-center">
+
+<input name="skip_Submit" value="Submit" type="submit"/>
+</div>
+
+</div>
+
+<a href="https://www.100forms.com" id="lnk100" title="form to email" style="font-size:0px;">form to email</a></div>
+<script src="https://www.100forms.com/js/FORMKEY:D6EGMN7Y53Y9" type="text/javascript"></script>
+</div>
+</form>
+
+
+
 		
-		  <!--name-->  
-          <div style="padding-bottom: 8px;margin-left: 0%; margin-right: 1%; max-width: 400px;">Name<br/>
-          <input type="text" id="data_11" name="data_11" style=" max-width : 450px; " class="form-control"/> 
-          </div>
-		  
-		  <!--Email-->
-          <div style="padding-bottom: 18px;margin-left: 0%; margin-right: 1%; max-width: 400px;">Email<br/>
-          <input type="text" id="data_3" name="data_3" style="max-width : 450px;" class="form-control"/> 
-          </div>
-		  <!--Location-->
-           <div style="padding-bottom: 18px;margin-left: 0%; margin-right: 1%; max-width: 400px;">Location<br/>
-           <input type="text" id="data_4" name="data_4" style="max-width : 450px;" class="form-control"/> 
-           </div>
-		  
-		  <!--mobile no.-->
-          <div style="padding-bottom: 18px;margin-left: 0%; margin-right: 1%; max-width: 400px;">Mobile no.<br/>
-          <input type="number" id="data_5" name="data_5" style="max-width : 400px;" class="form-control"/> 
-           </div>
-		  
-		  <!--question1-->
-          <div style="padding-bottom: 18px;margin-left: 0%; margin-right: 1%; max-width: 400px;">Do you have your own shop?<br/>
-               <span><input type="radio" style="vertical-align: middle; margin: 0px;" id="data_6_0" name="data_6" value="yes"/> Yes</span><br/>
-               <span><input type="radio" style="vertical-align: middle; margin: 0px;" id="data_6_1" name="data_6" value="no"/> No</span><br/>
-          </div>
-		  
-		  <!--question2-->
-         <div style="padding-bottom: 18px;margin-left: 0%; margin-right: 1%; max-width: 400px;">What type of bag would you like to order?<br/>
-              <select id="data_7" name="data_7" style="max-width : 400px;" class="form-control"> 
-                      <option>      </option>
-                      <option>Paper Pouch</option>
-                      <option>Handled Paper Bag</option>
-                      <option>Thin Handled Bag</option>
-                      <option>Pizza Bag</option>
-                      <option>Other</option>
-              </select>
-          </div>
-		  
-		  <!--question 2 b-->
-          <div style="padding-bottom: 18px;margin-left: 0%; margin-right: 1%; max-width: 400px;">If other then please mention here<br/>
-               <input type="text" id="data_8" name="data_8" style=" max-width : 450px;" class="form-control"/>
-          </div>
-		  
-		  <!--quantity-->
-           <div style="padding-bottom: 18px;margin-left: 0%; margin-right: 1%; max-width: 400px;">Quantity (minimum 1000*)<br/>
-                 <input type="text" id="data_9" name="data_9" style="max-width : 450px;" class="form-control"/> 
-           </div>
-		  
-		  <!--message-->
-            <div style="padding-bottom: 18px;">Message<br/>
-                 <textarea id="data_10" false name="data_10" style="max-width : 400px;" rows="5"
-                  cols="40" class="form-control"></textarea> 
-            </div>
-		  
-		  <!--submit-->
-            <div  class="gradient" style="padding-bottom: 18px; width:100%; max-width:400px;">
-                   <input name="skip_Submit" value="Submit" type="submit"/></div>
-            <div>
 
-		    <!--backlink-->
-           <a href="https://www.100forms.com" id="lnk100" title="form to email" style="font-size:0px">100form</a>
-           <script src="https://www.100forms.com/js/FORMKEY:D6EGMN7Y53Y9" type="text/javascript"></script>  
-           </div>
-           </div>
-           </form>
-           </div>
-           </div>
-           </div>
-           </div>
-           </div>
+<script type="text/javascript">
+function validateForm() {
+if (isEmpty(document.getElementById('data_11').value.trim())) {
+alert('Name is required!');
+return false;
+}
+if (!validateEmail(document.getElementById('data_3').value.trim())) {
+alert('Email must be a valid email address!');
+return false;
+}
+if (isEmpty(document.getElementById('data_5').value.trim())) {
+alert('Mobile no. is required!');
+return false;
+}
+return true;
+}
+function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+function validateEmail(email) {
+var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+return isEmpty(email) || re.test(email);
+}
+</script>
+  </div>
 
-                 </section>
-         </body>
-                 
-           <!--script-->
-         <script type="text/javascript">
-                  function validateForm() {
-                            if (isEmpty(document.getElementById('data_11').value.trim())) {
-                            alert('Name is required!');
-                            return false;
-                  }
-			  
-                  if (!validateEmail(document.getElementById('data_3').value.trim()))
-		  {
-                      alert('Email must be a valid email address!');
-                      return false;
-                   }
-                   if (isEmpty(document.getElementById('data_5').value.trim())) {
-                       alert('Mobile no. is required!');
-                       return false;
-                    }
-                   return true;
-                    }
-		 
-                  function isEmpty(str) { return (str.length === 0 || !str.trim()); }
-                  function validateEmail(email) {
-                  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
-                  return isEmpty(email) || re.test(email);
-                    }
-      </script>
+</body>
 </html>
-<!--contact form end-->
